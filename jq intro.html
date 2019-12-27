@@ -1,0 +1,49 @@
+<html>
+<head> </head>
+<body>
+<input type = "text" id = "id1" value="You Are Beginner">
+<input type = "text" id = "id2" >
+<input type = "text" id = "id3" >
+<input type = "button" id = "btn" value="CLICK">
+<span id = "spn"> </span>
+
+<p> this is para </p>
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+<script>
+$(document).ready(
+ function() {
+  alert("hello");
+  $("p").text("hellooo");
+   $("p").css({"background-color" : "red", "color" : "white" });
+    $("p").attr("title" , "paragraph");
+  $("#btn").click(
+   function() {
+   $('#id1').val("YOu are an expert");
+   
+   $("span").text($("#id1").val());
+   });
+  $("#id1").focus(
+   function() {
+   $('#id1').css({"background-color" : "red", "color" : "white" });
+   });
+     $("#id1").blur(
+   function() {
+   $('#id1').css({"background-color" : "white", "color" : "black" });
+   });
+   $("input").blur(
+   function() {
+   $(this).css({"background-color" : "white", "color" : "black" });
+   });
+   $("input").focus(
+   function() {
+   $(this).css({"background-color" : "red", "color" : "white" });
+   });
+  });  
+  
+  
+  </script>
+  </body>
+</html>
