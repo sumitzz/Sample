@@ -1,0 +1,74 @@
+package com.nexwave.training;
+
+public class Classroom {
+	private int classId;
+	private int no_of_system;
+	private String className;
+	private boolean projector;
+	private boolean ac;
+	private String faculty;
+	private boolean availability;
+	Classroom(int classId, int no_of_system,String className, boolean projector,
+			boolean ac,String faculty,boolean availability) {
+		this.classId = classId;
+		this.no_of_system = no_of_system;
+		this.className = className;
+		this.projector = projector;
+		this.ac = ac;
+		
+
+	}
+	Classroom() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "Classroom [classId=" + classId + ", no_of_system=" + no_of_system + ", className=" + className
+				+ ", projector=" + projector + ", ac=" + ac + ", faculty=" + faculty + ", availability=" + availability
+				+ "]";
+	}
+	public int getClassId() {
+		return this.classId;
+	}
+	public void setClassId(int classId) {
+		this.classId = classId;
+	}
+	public int getNo_of_system() {
+		return this.no_of_system;
+	}
+	public void setNo_of_system(int no_of_system) {
+		this.no_of_system = no_of_system;
+	}
+	public String getClassName() {
+		return this.className;
+	}
+	public void setClassName(String className) {
+		this.className = className;
+	}
+	public boolean isProjector() {
+		return this.projector;
+	}
+	public void setProjector(boolean projector) {
+		this.projector = projector;
+	}
+	public boolean isAc() {
+		return this.ac;
+	}
+	public void setAc(boolean ac) {
+		this.ac = ac;
+	}
+	public String getFaculty() {
+		return this.faculty;
+	}
+	public void setFaculty(String faculty) {
+		this.faculty = faculty;
+	}
+	public boolean isAvailability() {
+		return this.availability;
+	}
+	public void setAvailability(boolean availability) {
+		this.availability = availability;
+	}
+
+}
