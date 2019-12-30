@@ -7,21 +7,25 @@ public class Classroom_demo {
 	public static void main(String args[]) {
 
 		Scanner scr = new Scanner(System.in);
-
-		System.out.println("Please Enter No. of Rooms");
-		int rooms = scr.nextInt();
 		
-		Classroom[] objects = new Classroom[rooms];
 		while(true) {
-		System.out.println("Please Enter option 1 to Add new rooms" 
+		
+			System.out.println("Please Enter option 1 to Add new rooms" 
 				+ "option 2 to Search new rooms"
 				+ "option 3 to Display new rooms"
 				+ "option 4 to Allocate new rooms"
 				+ "option 5 to Allocate new rooms");
 		String option=scr.next();
+		Classroom[] objects =null;
+		
 		switch(option)
 		{
 		case "1":
+			System.out.println("Please Enter No. of Rooms");
+			int rooms = scr.nextInt();
+			
+			objects = new Classroom[rooms];
+			
 			
 			for (int i = 0; i < objects.length; i++) {
 
@@ -52,9 +56,8 @@ public class Classroom_demo {
 				objects[i] = room1;
 			}
 			break;
-
 		case "2":
-			
+			break;
 		case "3":
 			for (int j = 0; j < objects.length; j++) {
 				System.out.println(objects[j]);
